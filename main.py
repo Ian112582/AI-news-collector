@@ -5,7 +5,7 @@ import requests
 from openai import OpenAI
 
 # 1. 設定你的關鍵字與查詢數量
-KEYWORDS = ["人工智慧", "AI 應用"]  # 可自由修改或增加關鍵字
+KEYWORDS = ["美股", "AI"]  # 可自由修改或增加關鍵字
 MAX_ARTICLES_PER_KEYWORD = 3      # 每個關鍵字抓取最新的前幾篇
 
 # 2. 讀取安全環境變數
