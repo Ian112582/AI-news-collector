@@ -2,19 +2,19 @@ name: Daily AI News Collector
 
 on:
   schedule:
-    # 每天台灣時間早上 08:00 自動執行 (UTC 00:00)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 允許手動點擊按鈕觸發執行
+    # 台灣時間每天中午 12:00 自動執行 (UTC 04:00)
+    - cron: '0 4 * * *'
+  workflow_dispatch: # 允許隨時手動點擊按鈕觸發
 
 jobs:
   run-script:
     runs-on: ubuntu-latest
     steps:
       - name: 複製專案程式碼
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: 設定 Python 環境
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
