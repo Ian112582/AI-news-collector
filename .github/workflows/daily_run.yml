@@ -2,9 +2,12 @@ name: Daily AI News Collector
 
 on:
   schedule:
-    # 台灣時間每天中午 12:00 自動執行 (UTC 04:00)
-    - cron: '0 4 * * *'
-  workflow_dispatch: # 允許隨時手動點擊按鈕觸發
+    # Cron 時間使用 UTC：
+    # 23:30 (UTC) = 台灣時間 早上 07:30
+    # 04:30 (UTC) = 台灣時間 中午 12:30
+    - cron: '30 23 * * *'
+    - cron: '30 4 * * *'
+  workflow_dispatch: # 仍保留手動按鈕
 
 jobs:
   run-script:
