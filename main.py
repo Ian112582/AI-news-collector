@@ -10,7 +10,7 @@ from openai import OpenAI
 ZH_KEYWORDS = ["台積電", "景碩", "日月光"]
 EN_KEYWORDS = ["SPCX", "TSLA", "Quantum Computer", "GE Vernova"]
 
-MAX_ARTICLES = 4  # 每個關鍵字抓取的文章數量
+MAX_ARTICLES = 3  # 每個關鍵字抓取的文章數量
 
 # ---------------------------------------------------------
 # 2. 安全讀取環境變數
